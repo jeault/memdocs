@@ -195,6 +195,9 @@ To create these policies, browse to **Apps** > **App protection policies** in th
 - **Android device administrator**: Intune-managed devices using the Android Device Administration API.
 - **Android Enterprise**: Intune-managed devices using Android Enterprise Work Profiles or Android Enterprise Full Device Management.
 
+> [!NOTE]
+> For Android Enterprise Work Profiles under Intune the device management state defines 'Android Enterprise' as targeting policy to the applications installed under the Managed Play Store. For example applications under personal profile or outside of the Work Profile would be considered Unmanaged and when installed outside of the Managed Play Store.
+
 On Android, Android devices will prompt to install the Intune Company Portal app regardless of which Device type is chosen. For example, if you select 'Android Enterprise' then users with unmanaged Android devices will still be prompted.
 
 For iOS/iPadOS, for the 'Device type' selection to be enforced to Intune managed devices, additional app configuration settings are required. These configurations will communicate to the APP service that a particular app is managed - and that APP settings will not apply:
